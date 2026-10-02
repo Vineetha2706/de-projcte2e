@@ -1,0 +1,10 @@
+{
+	"name": "e2eAzureKeyVault1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://e2epostgresdb.vault.azure.net/"
+		}
+	}
+}
