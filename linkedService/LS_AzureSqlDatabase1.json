@@ -1,0 +1,23 @@
+{
+	"name": "LS_AzureSqlDatabase1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "e2evinni.database.windows.net",
+			"database": "e2e-sqldb-vinni",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "vinni",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVaultSQLDB",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "vinni"
+			}
+		}
+	}
+}
